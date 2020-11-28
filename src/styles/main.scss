@@ -1,7 +1,11 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "reset";
+@import "container";
+@import "nav";
+@import "header";
+@import "links.scss";
+@import "intro";
+@import "partners";
 
 body {
-  background: $c-gray;
+  background-color: #fff;
 }

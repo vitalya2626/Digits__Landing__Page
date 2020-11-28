@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #1e266d;
+  margin-bottom: 146px;
+
+  &__links {
+    padding-right: 101px;
+    padding-left: 86px;
+  }
+
+  &__button {
+    padding: 4px 20px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+    background: #3751ff;
+    border-radius: 100px;
+  }
+}
