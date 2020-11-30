@@ -1,13 +1,8 @@
 @import "reset";
-@import "container";
-@import "nav";
 @import "header";
-@import "links.scss";
-@import "intro";
-@import "partners";
+@import "nav";
+@import "benefits";
+@import "buy";
 @import "reviews";
 @import "contact";
-
-body {
-  background-color: #fff;
-}
+@import "footer";

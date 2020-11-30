@@ -2,48 +2,52 @@
   background: #3751ff;
   height: 323px;
   margin-top: 150px;
-}
-
-.contact {
-  box-sizing: border-box;
-  max-width: 1250px;
-  padding: 0 20px;
-  height: 100%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__action {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 
   &__title {
-    font-family: "Halyard Display", sans-serif;
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 60px;
-    text-align: left;
+    text-align: start;
     color: white;
   }
-}
 
-.action {
   &__button {
-    font-family: "Halyard Display", sans-serif;
+    background-color: white;
+    color: #455880;
     font-weight: 500;
     font-size: 18px;
     line-height: 110%;
-    text-align: center;
-    color: #455880;
-    background-color: #fff;
     padding: 17px 40px 17px 70px;
     position: relative;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 100px;
 
+    &:before {
+      content: url(../images/mailpic.svg);
+      display: block;
+      position: absolute;
+      left: 26px;
+      top: 13px;
+    }
   }
+
+  &__right {
+    text-align: right;
+  }
+}
+
+.section__launch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__text {
+  margin-top: 19px;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  color: #dfe0eb;
+  text-align: right;
+
+}
+
+.button__text--color {
+  color: rgb(254, 211, 133);
+  text-decoration: none;
 }

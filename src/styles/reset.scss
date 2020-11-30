@@ -1,27 +1,18 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
+body,
+ul,
+li,
+p,
+button,
+input,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button {
+h3 {
   margin: 0;
   padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  margin: 0;
-  font-family: "Halyard Text", serif;
-  font-size: 18px;
+  outline: none;
 }

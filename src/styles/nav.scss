@@ -1,24 +1,96 @@
-.nav {
+.header__logo {
+  margin-right: 80px;
+}
+
+.header__navigation {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.nav__list {
+  width: 500px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 16px;
-  color: #1e266d;
-  margin-bottom: 146px;
+  margin-left: 0;
+  margin-right: auto;
+  list-style: none;
+}
 
-  &__links {
-    text-decoration: none;
-    color: #1e266d;
-    padding-right: 101px;
-    padding-left: 86px;
-  }
+.nav__item {
+  padding: 10px;
 
-  &__button {
-    padding: 4px 20px;
-    line-height: 40px;
-    text-align: center;
-    color: white;
-    background: #3751ff;
-    border-radius: 100px;
+  &--list {
+    position: relative;
+
+    &::before {
+      content: url(../images/arrowlist.svg);
+      position: absolute;
+      right: -3px;
+      top: 40px;
+    }
   }
 }
+
+.header__contact {
+  align-items: center;
+  color: black;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  line-height: 80px;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    color: rgb(0, 0, 179);
+    transform: scale(1.2);
+    text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.48);
+  }
+}
+
+.nav__link {
+  color: black;
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  line-height: 80px;
+}
+
+.button {
+  font-family: "Halyard Text", sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: #3751ff;
+  color: white;
+  border-radius: 100px;
+  border: none;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    box-shadow: 1px 1px 10px  rgb(15, 22, 47);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.button__contact {
+  margin-left: 34px;
+  padding: 0 16px;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+// .hidden {
+//   display: none;
+// }
+
+// #menuToggle:checked ~ .nav__item {
+//   padding: 0;
+// }
