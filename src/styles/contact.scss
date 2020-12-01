@@ -1,4 +1,4 @@
-.launch {
+.contact {
   background: #3751ff;
   height: 323px;
   margin-top: 150px;
@@ -31,7 +31,7 @@
   }
 }
 
-.section__launch {
+.section__contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,4 +50,25 @@
 .button__text--color {
   color: rgb(254, 211, 133);
   text-decoration: none;
+}
+
+@media screen and (max-width: 740px) {
+  .section__contact {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .button__text {
+    text-align: center;
+  }
+  
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__right {
+    width: 388px;
+    margin-top: 30px;
+    text-align: center;
+  }
 }

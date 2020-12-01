@@ -89,3 +89,51 @@
     color: rgba(69, 88, 128, 0.5);
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .main__pic {
+    transform: scale(0.6);
+
+    &::after {
+      transform: scale(1.4);
+    }
+  }
+}
+
+@media screen and (max-width: 585px) {
+
+  .header {
+    &__title {
+      font-size: 36px;
+  
+      &::after {
+        content: "For everyone, from beginners to experts";
+        position: absolute;
+        font-family: "Halyard Text", sans-serif;
+        font-size: 15px;
+      }
+    }
+
+    &__buttons {
+      flex-direction: column;
+      transform: translateY(50px);
+      width: 70%;
+
+      .button__info {
+        margin-bottom: 15px;
+      }
+    }
+
+    .header__color {
+      height: 728px;
+    }
+  }
+
+  .main__pic {
+    transform: scale(0.3);
+
+    &::after {
+      transform: scale(2.3);
+    }
+  }
+}

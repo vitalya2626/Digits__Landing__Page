@@ -1,5 +1,6 @@
 .shop__background {
   background-color: #fff9ea;
+  width: 100%;
 }
 
 .buy {
@@ -49,6 +50,55 @@
 
       &--first {
         margin-right: -20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  
+  .example__collum--second,
+  .example__collum--fives {
+    display: none;
+  }
+
+  .example__collum {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .buy {
+    &__example {
+      transform: scale(0.5);
+      transform-origin: bottom;
+    }
+
+    &__button {
+      margin-bottom: -200px;
+      width: 50%;
+    }
+
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .buy {
+    &__example {
+      transform: scale(0.25);
+      transform-origin: bottom center;
+    }
+
+    &__button {
+      margin-bottom: -350px;
+      width: 70%;
+    }
+    &__title {
+      padding-top: 20px;
+
+      &__down {
+        font-size: 15px;
       }
     }
   }
