@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Digits</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="icon"
+          type="image/png"
+          href="https://img.icons8.com/ultraviolet/40/000000/checkmark--v2.png">
   </head>
   <body>
     <header class="header">
@@ -39,7 +42,7 @@
               <a href="#help" class="link nav__link">Company</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="link nav__link">Pricing</a>
+              <a href="#buy" class="link nav__link">Pricing</a>
             </li>
             <li class="nav__item">
               <a href="#talk" class="link nav__link">Blog</a>
@@ -55,8 +58,8 @@
         <div class="header__main">
           <h1 class="header__title">Good design meets<br>great user experience</h1>
           <div class="header__buttons">
-            <button class="button button__info">Buy Digits</button>
-            <button class="button button__info--second">See the Features</button>
+            <button onclick="window.location.href='#buy'" class="button button__info">Buy Digits</button>
+            <button onclick="window.location.href='#help'" class="button button__info--second">See the Features</button>
           </div>
           <div class="main__pic"></div>
         </div>
@@ -275,9 +278,21 @@
         <div class="footer__resources">
           <h3 class="small-title">Resources</h3>
           <div class="footer__network">
-            <div class="icon link__facebook"></div>
-            <div class="icon link__instagram"></div>
-            <div class="icon link__twitter"></div>
+            <a
+              target="https://www.facebook.com/"
+              href="https://www.facebook.com/"
+              class="icon link__facebook">
+            </a>
+            <a
+              target="https://www.instagram.com/"
+              href="https://www.instagram.com/"
+              class="icon link__instagram">
+            </a>
+            <a
+              target="https://www.twitter.com/"
+              href="https://www.twitter.com/"
+              class="icon link__twitter">
+            </a>
             <div class="icon link__globe"></div>
             <div class="icon link__leave"></div>
           </div>
